@@ -1,0 +1,14 @@
+
+import matplotlib.pyplot as plt
+import seaborn as sns 
+icecream_sale=[12,15,56,45,78,45,74]
+snack_sale=[45,74,12,86,63,50,12]
+day=['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
+sns.set_style("whitegrid")
+#sns.set_style("darkgrid")
+plt.plot(day, icecream_sale, marker='o')
+plt.plot(day, snack_sale, marker='x')
+plt.xlabel('Day')
+plt.ylabel('Sale')
+plt.title('Snack Center Sale')
+plt.legend(['Icecream Sale', 'Snack Sale'])
